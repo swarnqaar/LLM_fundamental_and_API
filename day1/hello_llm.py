@@ -11,7 +11,7 @@ if not my_api_key:
 
 client=Groq(api_key=my_api_key)
 
-model="llama-3.3-70b-versatile"
+model="openai/gpt-oss-120b"
 role="user"
 prompt="Do you know Padho with Pratyush"
 # message me role and content
@@ -21,7 +21,6 @@ message={
 }
 
 messages=[message]
-
 response=client.chat.completions.create(model=model, messages=messages)
 print(response)
 
