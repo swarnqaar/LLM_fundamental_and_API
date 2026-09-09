@@ -13,7 +13,7 @@ client=Groq(api_key=my_api_key)
 
 model="openai/gpt-oss-120b"
 role="user"
-prompt="Do you know Padho with Pratyush"
+prompt="what is llm?"
 # message me role and content
 message={
     "role": role,
